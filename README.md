@@ -25,5 +25,7 @@ https://drive.google.com/drive/folders/10vGlJ7DFu_uM2USHLafMs9LOzKyEl6t_?usp=sha
 
   $ mkdir src
 
+
 f1tenth/src/ 폴더안에 드라이브에서 설치한 f1tenth_gym_ros 넣기
+
 f1tenth/src/ 폴더안에 car_duri 넣기
