@@ -48,7 +48,8 @@ docker파일 설치
     $ chmod +x *
     
 실행
-
+    
+    $ cd ~/f1tenth_ws/src/f1tenth_gym_ros
     $ sudo ./docker.sh
     
     새로운 터미널 실행
