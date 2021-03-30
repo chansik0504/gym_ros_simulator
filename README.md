@@ -17,7 +17,7 @@ Hello from Docker! 가 뜨면 정상설치
 
 https://drive.google.com/drive/folders/10vGlJ7DFu_uM2USHLafMs9LOzKyEl6t_?usp=sharing
 
-구글 드라이브에 들어가서 f1tenth_gym_ros 다운로드
+구글 드라이브에 들어가서 f1tenth_gym_ros, car_duri 다운로드
 
     $ mkdir f1tenth_ws
     $ cd f1tenth_ws
