@@ -55,3 +55,24 @@ docker파일 설치
     새로운 터미널 실행
     $ roslaunch car_duri ICE_fgm_solo.launch
     
+맵 변경
+
+    $ cd ~/f1tenth_ws/src/f1tenth_gym_ros/maps
+    $ cd ~/f1tenth_ws/src/f1tenth_gym_ros/f1tenth_gym/maps
+    
+    두 경로에 같은 맵과 같은 yaml 파일이 있어야함.
+    
+    $ cd ~/f1tenth_ws/src/f1tenth_gym_ros
+    $ gedit params.yaml
+        map_path: '/f1tenth_gym/maps/____ .yaml' 
+        ____ 부분을 맵 이름으로 수정해야함
+        저장 후 종료
+        
+    $ cd ~/f1tenth_ws/src/f1tenth_gym_ros/launch
+    $ gedit gym_bridge.launch
+        <arg name="map" default="$(find f1tenth_gym_ros)/maps/_____.yaml"/>
+        ____ 부분을 맵 이름으로 수정. 위의 params.yaml 파일에서 수정한 맵 이름과 같아야함
+        저장 후 종료
+        
+    $ cd ~/f1tenth_ws/src/f1tenth_gym_ros
+    $ sudo ./build_docker.sh ( 맵 바꿀때마다 해줘야함. 
