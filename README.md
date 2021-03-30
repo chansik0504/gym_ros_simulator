@@ -22,13 +22,15 @@ https://drive.google.com/drive/folders/10vGlJ7DFu_uM2USHLafMs9LOzKyEl6t_?usp=sha
     $ mkdir f1tenth_ws
     $ cd f1tenth_ws
     $ mkdir src
-    
-    $ gedit ~/.bashrc
-        맨밑줄에 추가
-        source ~/f1tenth_ws/devel/setup.bash
 
 
 f1tenth/src/ 폴더안에 드라이브에서 설치한 f1tenth_gym_ros, car_duri 넣기
 
     $ cd ~/f1tenth_ws
     $ catkin_make
+    
+    $ gedit ~/.bashrc
+        맨밑줄에 추가
+        source ~/f1tenth_ws/devel/setup.bash
+        저장 후 종료   
+    $ bash
